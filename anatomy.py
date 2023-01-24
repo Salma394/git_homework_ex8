@@ -1,17 +1,31 @@
+# !/usr/bin/python
 # This is a python module
+# lines one and two are just comments
 import sys
 
-# argc is a variable and the len (built in function that checks the length)
-# import sys is a module
+# pythons user system module sys is a sytem
 argument_count = len(sys.argv)
-# conditional statement. If first condition is not satisfied it will go to the next condition.
-if argument_count > 1:
-    print('Too many args')
+# argv is an argument vector- vector = a list so in this case a list of arguments
+# argument = an input (something we pass into something)
+# if a microwave was a function the argument would be the food you put in, the time, the power
+print(argument_count)
 
+# argument count is a variable
+
+# sys.argv - these count the number of arguments (items) passed to the command line
+# len is a function which counts the number of items or characters inside the variable
+
+if argument_count > 0:
+    # a conditional
+    print('Too many inputs')
+    # if the variable has  a value greater than one (in this case the number of items)
 else:
-    where = 'World'
-    print("Hello", where)
+    where = 'World'  # create a variable where and assign the value 'World' to it
+#     print("Hello", where) #takes multiple arguments / parameters/ inputs
+#     print ('one', 'two', 'three')
+# print ('Goodbye from ' + sys.argv[0])
+# Square brackets are a list
 
-# This output will be printed regardless of the conditional statements as it is outside the block
-print('Goodbye from' + sys.argv[0])
+platform = sys.platform
 
+print(platform)
