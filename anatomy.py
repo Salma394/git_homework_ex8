@@ -1,4 +1,4 @@
-# !/usr/bin/python
+
 # This is a python module
 # lines one and two are just comments
 import sys
